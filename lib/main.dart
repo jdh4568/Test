@@ -39,9 +39,7 @@ class Character extends StatelessWidget {
               'NAME',
               style: TextStyle(color: Colors.white, letterSpacing: 2.0),
             ),
-            const SizedBox(
-              height: 10,
-            ),
+            const SizedBox(height: 10),
             const Text(
               "BABANTO",
               style: TextStyle(
@@ -51,19 +49,12 @@ class Character extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(
-              height: 30.0,
-            ),
+            const SizedBox(height: 30.0),
             const Text(
               "BBANTO POWER LEVEL",
-              style: TextStyle(
-                color: Colors.white,
-                letterSpacing: 2.0,
-              ),
+              style: TextStyle(color: Colors.white, letterSpacing: 2.0),
             ),
-            const SizedBox(
-              height: 10,
-            ),
+            const SizedBox(height: 10),
             const Text(
               "10",
               style: TextStyle(
@@ -71,6 +62,47 @@ class Character extends StatelessWidget {
                 letterSpacing: 2.0,
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 30),
+            const Row(
+              children: [
+                Icon(Icons.check_circle_outline),
+                SizedBox(width: 10),
+                Text(
+                  "Using Lightsaber",
+                  style: TextStyle(fontSize: 16, letterSpacing: 1.0),
+                ),
+              ],
+            ),
+            const SizedBox(height: 3),
+            const Row(
+              children: [
+                Icon(Icons.check_circle_outline),
+                SizedBox(width: 10),
+                Text(
+                  "Hero face tatto",
+                  style: TextStyle(fontSize: 16, letterSpacing: 1.0),
+                ),
+              ],
+            ),
+            const SizedBox(height: 3),
+            const Row(
+              children: [
+                Icon(Icons.check_circle_outline),
+                SizedBox(width: 10),
+                Text(
+                  "Fire flames",
+                  style: TextStyle(fontSize: 16, letterSpacing: 1.0),
+                ),
+              ],
+            ),
+            const SizedBox(height: 3),
+            Center(
+              child: CircleAvatar(
+                backgroundImage: const AssetImage('images/ch2.png'),
+                backgroundColor: Colors.amber[800],
+                radius: 50,
               ),
             ),
           ],
